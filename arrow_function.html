@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let user = "koko";
+
+    window.onload = function(){
+      // printName(user);
+      printName4("moshe222");
+      document.body.innerHTML += "<br>"+targil(5,4);
+    }
+
+    // אם הפונקציה מחזירה ישר את הפקודה אפשר לוותר על
+    // הסוגריים המסולסלים וישר לתת את הפקודהד
+    let targil = (_x,_y) => _x * _y;
+    
+
+    // let targil = (_x,_y) => {
+    //   return _x * _y;
+    // }
+      // אם יש פרמטר אחד אפשר לוותר על הסוגריים העגולים
+    let printName4 = _name => {
+      document.body.innerHTML += _name;
+    }
+
+// שיטה זהה לפונקציה מתחת רק בארוו פאנקשן
+    let printName3 = (_name) => {
+      document.body.innerHTML += _name;
+    }
+
+    // expression function
+    let printName2 = function(_name){
+      document.body.innerHTML += _name;
+    }
+
+    // statement function
+    function printName(_name){
+      document.body.innerHTML += _name;
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
